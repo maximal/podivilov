@@ -11,6 +11,9 @@
 		.result {
 			font-size: 200%;
 		}
+		.form-check-label {
+			user-select: none;
+		}
 		footer {
 			margin-top: 2rem;
 			padding-top: 1rem;
@@ -107,6 +110,7 @@
 				continue;
 			}
 			modes[i].addEventListener('change', run);
+			modes[i].addEventListener('click', run);
 		}
 	});
 
